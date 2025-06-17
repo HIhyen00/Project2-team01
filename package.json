@@ -3,7 +3,13 @@
   "private": true,
   "workspaces": [
     "packages/*",
-    "lawform"
+    "lawform-container",
+    "lawform-header",
+    "lawform-footer",
+    "lawform-main",
+    "lawform-inquiry",
+    "lawform-aboutus",
+    "modal-test"
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap",
