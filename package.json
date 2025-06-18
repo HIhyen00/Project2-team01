@@ -2,23 +2,20 @@
   "name": "root",
   "private": true,
   "workspaces": [
-    "packages/*",
-    "lawform-container",
-    "lawform-header",
-    "lawform-footer",
-    "lawform-main",
-    "lawform-inquiry",
-    "lawform-aboutus",
-    "modal-test",
-    "lawform-topic1-app"
+    "lawform",
+    "login-page",
+    "register-page"
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "start": "lerna run start --parallel"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.21",
     "cross-env": "^7.0.3",
     "external-remotes-plugin": "^1.0.0",
-    "lerna": "^8.2.2"
+    "lerna": "^8.2.2",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.10"
   }
 }
