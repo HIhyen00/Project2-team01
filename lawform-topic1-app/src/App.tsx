@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 // import { Provider } from "react-redux";
 
@@ -14,13 +14,10 @@ import Write from "./section/Write.tsx";
 
 
 const App = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
 
     return (
         // <Provider store={store}>
-        <div className="min-w-[320px] mt-20">
+        <div className="min-w-[320px]">
             <Proof/>
             <Question/>
             <Situation/>

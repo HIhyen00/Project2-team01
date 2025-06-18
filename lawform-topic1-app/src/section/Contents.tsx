@@ -19,7 +19,7 @@ const Contents = () => {
                         <a className="box-border flex cursor-pointer overflow-hidden border-[0px] border-solid border-b border-[#f9f9f9]
                             mb-[20px] pb-[20px] last:mb-[0px] last:pb-[0px] last:border-b-[0px]" href="#">
                             <div className="h-[210px] w-[350px]">
-                                <img src="http://localhost:3006/icon/topic_app_1.png" className="w-full h-full"/>
+                                <img src="/icon/topic_app_1.png" className="w-full h-full"/>
                             </div>
                             <div className="box-border w-[calc(100%_-_350px)] py-[35px] pl-[40px]">
                                 <div className="flex items-center">
@@ -35,7 +35,7 @@ const Contents = () => {
                         <a className="box-border flex cursor-pointer overflow-hidden border-[0px] border-solid border-b border-[#f9f9f9]
                             mb-[20px] pb-[20px] last:mb-[0px] last:pb-[0px] last:border-b-[0px]" href="#">
                             <div className="h-[210px] w-[350px]">
-                                <img src="http://localhost:3006/icon/topic_app_2.png" className="w-full h-full"/>
+                                <img src="/icon/topic_app_2.png" className="w-full h-full"/>
                             </div>
                             <div className="box-border w-[calc(100%_-_350px)] py-[35px] pl-[40px]">
                                 <div className="flex items-center">
@@ -49,7 +49,7 @@ const Contents = () => {
                         <a className="box-border flex cursor-pointer overflow-hidden border-[0px] border-solid border-b border-[#f9f9f9]
                             mb-[20px] pb-[20px] last:mb-[0px] last:pb-[0px] last:border-b-[0px]" href="#">
                             <div className="h-[210px] w-[350px]">
-                                <img src="http://localhost:3006/icon/topic_app_3.png" className="w-full h-full"/>
+                                <img src="/icon/topic_app_3.png" className="w-full h-full"/>
                             </div>
                             <div className="box-border w-[calc(100%_-_350px)] py-[35px] pl-[40px]">
                                 <div className="flex items-center">

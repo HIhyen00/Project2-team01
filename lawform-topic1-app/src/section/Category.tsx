@@ -13,32 +13,32 @@ const Category = () => {
                 </h2>
                 <div className="mx-auto mt-[30px] w-full max-2-[1024px] flex gap-[20px] justify-center">
                     <a href="#" className="category-box">
-                        <img src="http://localhost:3006/icon/building_icon.png" className="mb-[10px] h-[32px] w-[32px]"/>
+                        <img src="/icon/building_icon.png" className="mb-[10px] h-[32px] w-[32px]"/>
                         <span className="H-16 text-[#333333] font-[400]">
                             근로·알바계약</span>
                     </a>
                     <a href="#" className="category-box">
-                        <img src="http://localhost:3006/icon/business_icon.png" className="mb-[10px] h-[32px] w-[32px]"/>
+                        <img src="/icon/business_icon.png" className="mb-[10px] h-[32px] w-[32px]"/>
                         <span className="H-16 text-[#333333] font-[400]">
                             지급명령 직접하기</span>
                     </a>
                     <a href="#" className="category-box">
-                        <img src="http://localhost:3006/icon/announcement_icon.png" className="mb-[10px] h-[32px] w-[32px]"/>
+                        <img src="/icon/announcement_icon.png" className="mb-[10px] h-[32px] w-[32px]"/>
                         <span className="H-16 text-[#333333] font-[400]">
                             차용증 간편 작성</span>
                     </a>
                     <a href="#" className="category-box">
-                        <img src="http://localhost:3006/icon/paper_icon.png" className="mb-[10px] h-[32px] w-[32px]"/>
+                        <img src="/icon/paper_icon.png" className="mb-[10px] h-[32px] w-[32px]"/>
                         <span className="H-16 text-[#333333] font-[400]">
                             고소장 나홀로 작성</span>
                     </a>
                     <a href="#" className="category-box">
-                        <img src="http://localhost:3006/icon/graph_icon.png" className="mb-[10px] h-[32px] w-[32px]"/>
+                        <img src="/icon/graph_icon.png" className="mb-[10px] h-[32px] w-[32px]"/>
                         <span className="H-16 text-[#333333] font-[400]">
                             주주총회</span>
                     </a>
                     <a href="#" className="category-box">
-                        <img src="http://localhost:3006/icon/house_icon.png" className="mb-[10px] h-[32px] w-[32px]"/>
+                        <img src="/icon/house_icon.png" className="mb-[10px] h-[32px] w-[32px]"/>
                         <span className="H-16 text-[#333333] font-[400]">
                             부동산</span>
                     </a>
