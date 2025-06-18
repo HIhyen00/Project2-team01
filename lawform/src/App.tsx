@@ -1,16 +1,32 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { CircularProgress } from "@mui/material";
+import { RecoilRoot } from "recoil";
 
-import "./index.css";
+const AuthApp = React.lazy(() => import("authApp/App"));
+const Register = React.lazy(() => import("register/App"));
 
-const App = () => (
-  <div className="mt-10 text-3xl mx-auto max-w-6xl">
-    <div>Name: lawfor11m</div>
-    <div>Framework: react-18</div>
-  </div>
-);
+const App = () => {
+    return (
+        <RecoilRoot>
+            <BrowserRouter>
+                <Suspense fallback={<div>Loading...</div>}>
+                    <Routes>
+                        <Route path="/" element={<div>Home Page</div>} />
+                        <Route path="/login-page/*" element={<AuthApp />} />
+                        <Route path="/register-page/*" element={<Register />} />
+                    </Routes>
+                </Suspense>
+            </BrowserRouter>
+        </RecoilRoot>
+    );
+};
 
-export default App;
+const container = document.getElementById("app") as HTMLElement;
+if (!container) {
+    throw new Error("Root container #app not found");
+}
 
-const root = ReactDOM.createRoot(document.getElementById("app") as HTMLElement);
+const root = ReactDOM.createRoot(container);
 root.render(<App />);
