@@ -15,22 +15,22 @@ const targets = ["chrome >= 87", "edge >= 88", "firefox >= 78", "safari >= 14"];
 export default defineConfig({
   context: __dirname,
   entry: {
-    main: "./src/index.ts",
+    main: "./src/index.tsx",
   },
   resolve: {
     extensions: ["...", ".ts", ".tsx", ".jsx"],
   },
 
   devServer: {
-    port: 3000,
+    port: 3008,
     historyApiFallback: true,
     watchFiles: [path.resolve(__dirname, "src")],
   },
   output: {
     // You need to set a unique value that is not equal to other applications
-    uniqueName: "lawform",
+    uniqueName: "lawform_aboutus",
     // publicPath must be configured if using manifest
-    publicPath: "http://localhost:3000/",
+    publicPath: "http://localhost:3008/",
   },
 
   experiments: {
