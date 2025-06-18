@@ -12,9 +12,9 @@ const Footer = () => {
                         <a className="text-xs cursor-pointer" onClick={() => navigate('/aboutus')}>
                             <strong>회사소개</strong></a>
                         <a className="text-xs">
-                            <strong>로폴 비즈니스</strong></a>
+                            <strong>로코코드 비즈니스</strong></a>
                         <a className="text-xs">
-                            <strong>로폴로이어</strong></a>
+                            <strong>로코코드로이어</strong></a>
                         <a className="text-xs">
                             <strong>서비스 소개</strong></a>
                         <a className="text-xs">
@@ -26,13 +26,13 @@ const Footer = () => {
                     </div>
                     <div className="flex flex-col gap-3">
                         <a className="text-xs">
-                            <strong>로폼소식</strong></a>
+                            <strong>로코코드소식</strong></a>
                         <a className="text-xs text-gray-400">
                             <strong>뉴스룸</strong></a>
                         <a className="text-xs text-gray-400">
                             <strong>공지사항</strong></a>
                         <a className="text-xs text-gray-400">
-                            <strong>로폼활동</strong></a>
+                            <strong>로코코드활동</strong></a>
                         <a className="text-xs text-gray-400">
                             <strong>자동작성</strong></a>
                         <a className="text-xs text-gray-400">
@@ -43,12 +43,12 @@ const Footer = () => {
                             <strong>자주하는 질문</strong></a>
                         <a className="text-xs text-gray-400">
                             <strong>1대1 문의</strong></a>
-                        <a className="text-xs text-gray-400">
-                            <strong>도입 문의</strong></a>
+                        <a className="text-xs cursor-pointer" onClick={() => navigate('/inquiry')}>
+                            <strong>도입문의</strong></a>
                     </div>
                     <div className="flex flex-col gap-3">
                         <a className="text-xs">
-                            <strong>마이로폼</strong></a>
+                            <strong>마이로코코드</strong></a>
                         <a className="text-xs text-gray-400">
                             <strong>드라이브</strong></a>
                         <a className="text-xs text-gray-400">

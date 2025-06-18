@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import '../index.css';
+import logoImage from '../assets/logo.jpg';
 import {useNavigate} from "react-router-dom";
+import MenuIcon from "./MenuIcons.tsx";
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,18 +12,14 @@ const Header = () => {
         <header>
             <nav className="fixed top-0 left-0 right-0 z-50">
                 <div className="h-16 flex justify-between items-center mx-auto px-6 py-6">
-                    <div className="flex items-center h-14 cursor-pointer   ">
-                        <div className="flex-shrink-0 w-16 h-16 bg-gray-300 rounded flex items-center justify-center"
-                             onClick={() => navigate('/')}>
-                            <span className="text-black text-xs ">로고</span>
-                        </div>
-                        {/*<img*/}
-                        {/*    src={logoImage}*/}
-                        {/*    alt="로고 이미지"*/}
-                        {/*    className="h-16 w-auto max-w-24 w-auto object-contain"*/}
-                        {/*/>*/}
+                    <div className="">
+                        <img
+                            src={logoImage}
+                            alt="로고 이미지"
+                            onClick={() => navigate('/')}
+                            className="w-35 h-35 object-contain cursor-pointer"
+                        />
                     </div>
-
                     <div className="flex items-center gap-5">
                         <button className="text-gray-600 text-base font-bold cursor-pointer">
                             로그인
@@ -39,7 +37,7 @@ const Header = () => {
                 </div>
             </nav>
             {isMenuOpen ? <div
-                className="fixed left-0 right-0 bottom-0 top-16 bg-gray-400 opacity-50 z-40"
+                className="fixed left-0 right-0 bottom-0 top-20 bg-gray-400 opacity-50 z-40"
                 onClick={() => setIsMenuOpen(false)}
             ></div> : <div/>}
             <div
@@ -57,9 +55,7 @@ const Header = () => {
                     </div>
                     <div className="grid grid-cols-4">
                         <div className="flex items-center gap-1 p-2">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
-                            </div>
+                            <MenuIcon name="searchDocument" size={30}/>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
                                     내용증명
@@ -67,8 +63,9 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 p-2">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-6 h-6 rounded flex flex-col items-center justify-center">
+                                <MenuIcon name="paymentOrderCoin" size={14} className="-mb-4"/>
+                                <MenuIcon name="paymentOrderHand" size={20} className="-mt-2"/>
                             </div>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
@@ -77,9 +74,7 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 p-2">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
-                            </div>
+                            <MenuIcon name="contract" size={30}/>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
                                     계약서
@@ -87,8 +82,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 p-2">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-6 h-6  rounded flex items-center justify-center">
+                                <MenuIcon name="agreement" size={30}/>
                             </div>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
@@ -97,8 +92,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 p-2">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-6 h-6  rounded flex items-center justify-center">
+                                <MenuIcon name="accusation" size={30}/>
                             </div>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
@@ -107,8 +102,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 p-2">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-6 h-6  rounded flex items-center justify-center">
+                                <MenuIcon name="laborContract" size={30}/>
                             </div>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
@@ -117,8 +112,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 p-2">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-6 h-6  rounded flex items-center justify-center">
+                                <MenuIcon name="promissoryNote" size={30}/>
                             </div>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
@@ -127,8 +122,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 p-2">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-6 h-6  rounded flex items-center justify-center">
+                                <MenuIcon name="powerOfAttorney" size={30}/>
                             </div>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
@@ -137,8 +132,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 p-2">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-6 h-6  rounded flex items-center justify-center">
+                                <MenuIcon name="accountsReceivable" size={30}/>
                             </div>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
@@ -147,8 +142,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 p-2">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-6 h-6  rounded flex items-center justify-center">
+                                <MenuIcon name="serviceContract" size={30}/>
                             </div>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
@@ -157,8 +152,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 p-2">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-6 h-6  rounded flex items-center justify-center">
+                                <MenuIcon name="defamation" size={30}/>
                             </div>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
@@ -167,8 +162,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 p-2">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-6 h-6  rounded flex items-center justify-center">
+                                <MenuIcon name="damageCompensation" size={30}/>
                             </div>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
@@ -177,8 +172,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 p-2">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-6 h-6  rounded flex items-center justify-center">
+                                <MenuIcon name="trafficAccident" size={30}/>
                             </div>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
@@ -187,8 +182,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 p-2">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-6 h-6  rounded flex items-center justify-center">
+                                <MenuIcon name="privacyPolicy" size={30}/>
                             </div>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
@@ -197,8 +192,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 p-2">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-6 h-6  rounded flex items-center justify-center">
+                                <MenuIcon name="landlord" size={30}/>
                             </div>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
@@ -207,8 +202,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 p-2">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-6 h-6  rounded flex items-center justify-center">
+                                <MenuIcon name="tenant" size={30}/>
                             </div>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
@@ -224,9 +219,8 @@ const Header = () => {
                     <div className="text-xs">AI 모델을 선택하면 채팅으로 법률문서를 작성할 수 있어요.</div>
                     <div className=" mt-6 grid grid-cols-4">
                         <div className="flex items-center gap-1 p-2">
-                            <div
-                                className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-6 h-6  rounded flex items-center justify-center">
+                                <MenuIcon name="unreceivedMoney" size={30}/>
                             </div>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
@@ -235,9 +229,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 p-2">
-                            <div
-                                className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-6 h-6  rounded flex items-center justify-center">
+                                <MenuIcon name="laborPartTimeContract" size={30}/>
                             </div>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
@@ -246,9 +239,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 p-2">
-                            <div
-                                className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-6 h-6  rounded flex items-center justify-center">
+                                <MenuIcon name="onlineFraudInsult" size={30}/>
                             </div>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
@@ -257,9 +249,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 p-2">
-                            <div
-                                className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-6 h-6  rounded flex items-center justify-center">
+                                <MenuIcon name="realEstateRental" size={30}/>
                             </div>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
@@ -268,9 +259,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 p-2">
-                            <div
-                                className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-6 h-6  rounded flex items-center justify-center">
+                                <MenuIcon name="serviceTermsPrivacy" size={30}/>
                             </div>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
@@ -279,9 +269,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-1 p-2">
-                            <div
-                                className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-6 h-6  rounded flex items-center justify-center">
+                                <MenuIcon name="shareholderMeeting" size={30}/>
                             </div>
                             <div className="flex-1">
                                 <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">
@@ -295,8 +284,8 @@ const Header = () => {
                     <div className="text-base font-bold">서비스 소개</div>
                     <div className="grid grid-cols-2">
                         <div className="flex items-center gap-3 p-3">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-8 h-8 bg-blue-500 rounded flex items-center justify-center">
+                                <img src="https://cdn.lawform.io/main/autodoc.svg"/>
                             </div>
                             <div className="flex-1">
                                 <div className="font-bold text-gray-900">자동작성</div>
@@ -304,8 +293,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-3 p-3">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-8 h-8 bg-blue-500 rounded flex items-center justify-center">
+                                <img src=" https://cdn.lawform.io/main/esign.svg"/>
                             </div>
                             <div className="flex-1">
                                 <div className="font-bold text-gray-900">전자서명</div>
@@ -313,8 +302,8 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-3 p-3">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-8 h-8 bg-blue-500 rounded flex items-center justify-center">
+                                <img src=" https://cdn.lawform.io/main/drive.svg"/>
                             </div>
                             <div className="flex-1">
                                 <div className="font-bold text-gray-900">드라이브</div>
@@ -322,26 +311,26 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="flex items-center gap-3 p-3">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-8 h-8 bg-blue-500 rounded flex items-center justify-center">
+                                <img src=" https://cdn.lawform.io/main/teams.svg"/>
                             </div>
                             <div className="flex-1">
                                 <div className="font-bold text-gray-900">TEAMS</div>
-                                <div className="text-sm text-gray-600">기업 전용 로폼 서비스</div>
+                                <div className="text-sm text-gray-600">기업 전용 로코코드 서비스</div>
                             </div>
                         </div>
                         <div className="flex items-center gap-3 p-3">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-8 h-8 bg-blue-500 rounded flex items-center justify-center">
+                                <img src=" https://cdn.lawform.io/main/lawform_business.svg"/>
                             </div>
                             <div className="flex-1">
-                                <div className="font-bold text-gray-900">로폼 비즈니스</div>
+                                <div className="font-bold text-gray-900">로코코드 비즈니스</div>
                                 <div className="text-sm text-gray-600">AI 법무관리 솔루션</div>
                             </div>
                         </div>
                         <div className="flex items-center gap-3 p-3">
-                            <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded flex items-center justify-center">
-                                <span className="text-white text-xs">사진</span>
+                            <div className="flex-shrink-0 w-8 h-8 bg-blue-500 rounded flex items-center justify-center">
+                                <img src=" https://cdn.lawform.io/main/ic_34_demo_blue.svg"/>
                             </div>
                             <div className="flex-1">
                                 <div className="font-bold text-gray-900">서비스 체험</div>
@@ -360,7 +349,7 @@ const Header = () => {
                                 가이드</a>
                         </div>
                         <div className="items-center gap-3 p-2">
-                            <a href="#" className=" block text-sm text-gray-700 hover:text-blue-600 font-bold">로폼 임금
+                            <a href="#" className=" block text-sm text-gray-700 hover:text-blue-600 font-bold">로코코드 임금
                                 계산기</a>
                             <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">근로계약서 쓰기 전 임금계산기로 월급액
                                 확인</a>
@@ -371,7 +360,7 @@ const Header = () => {
                     <div className="text-base font-bold">기업 전용 서비스</div>
                     <div className=" mt-6 grid grid-cols-2">
                         <div className="items-center gap-3 p-2">
-                            <a href="#" className=" block text-sm text-gray-700 hover:text-blue-600 font-bold">로펌
+                            <a href="#" className=" block text-sm text-gray-700 hover:text-blue-600 font-bold">로코코드
                                 비즈니스</a>
                             <a href="#" className=" text-sm text-gray-700 hover:text-blue-600">기업 법무관리 효율화를 위한 AI 법무관리
                                 솔루션</a>

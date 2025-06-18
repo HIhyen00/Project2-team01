@@ -22,15 +22,15 @@ export default defineConfig({
   },
 
   devServer: {
-    port: 3008,
+    port: 3006,
     historyApiFallback: true,
     watchFiles: [path.resolve(__dirname, "src")],
   },
   output: {
     // You need to set a unique value that is not equal to other applications
-    uniqueName: "lawform_aboutus",
+    uniqueName: "lawform_topic1_app",
     // publicPath must be configured if using manifest
-    publicPath: "http://localhost:3008/",
+    publicPath: "http://localhost:3006/",
   },
 
   experiments: {

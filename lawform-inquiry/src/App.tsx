@@ -8,7 +8,9 @@ const App = () => {
 
     return (
         <div className="min-h-screen bg-white text-gray-800 mt-20">
-            <Inquiry/>
+            <main className="mx-auto">
+                <Inquiry/>
+            </main>
         </div>
     );
 }

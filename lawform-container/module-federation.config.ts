@@ -4,6 +4,7 @@ export const mfConfig = {
         lawformHeaderApp: "lawformHeaderApp@http://localhost:3001/remoteEntry.js",
         lawformFooterApp: "lawformFooterApp@http://localhost:3002/remoteEntry.js",
         lawformMainApp: "lawformMainApp@http://localhost:3003/remoteEntry.js",
+        lawformTopic1App: "lawformTopic1App@http://localhost:3006/remoteEntry.js",
         lawformInquiryApp: "lawformInquiryApp@http://localhost:3007/remoteEntry.js",
         lawformAboutUsApp: "lawformAboutUsApp@http://localhost:3008/remoteEntry.js",
         modalTestApp: "modalTestApp@http://localhost:3333/remoteEntry.js",
