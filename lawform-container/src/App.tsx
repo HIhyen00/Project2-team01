@@ -11,6 +11,7 @@ const LawformMainApp = lazy(() => import("lawformMainApp/App"));
 const LawformInquiryApp = lazy(() => import("lawformInquiryApp/App"));
 const LawformAboutUsApp = lazy(() => import("lawformAboutUsApp/App"));
 const ModalTestApp = lazy(() => import("modalTestApp/App"));
+const LawformTopic1App = lazy(() => import("lawformTopic1App/App"));
 
 
 const App = () => (
@@ -25,6 +26,7 @@ const App = () => (
                 <Route path="/" element={<LawformMainApp/>}/>
                 <Route path="/inquiry" element={<LawformInquiryApp/>}/>
                 <Route path="/aboutus" element={<LawformAboutUsApp/>}/>
+                <Route path="/topic1" element={<LawformTopic1App/>}/>
             </Routes>
             <LawformFooterApp/>
         </Suspense>

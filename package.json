@@ -9,7 +9,8 @@
     "lawform-main",
     "lawform-inquiry",
     "lawform-aboutus",
-    "modal-test"
+    "modal-test",
+    "lawform-topic1-app"
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap",
