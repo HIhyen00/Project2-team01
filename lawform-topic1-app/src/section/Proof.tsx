@@ -7,19 +7,19 @@ const Proof = () => {
             title: "내용증명 인기 TOP 1",
             subtitle: "보증금 반환 청구",
             action: "지금 작성하기",
-            icon : (<img src="/icon/pencil_icon.png" alt="icon" className="w-[20px] h-[20px]" />),
+            icon : (<img src="http://localhost:3006/icon/pencil_icon.png" alt="icon" className="w-[20px] h-[20px]" />),
         },
         {
             title: "내용증명 인기 TOP 2",
             subtitle: "대여금 청구",
             action: "지금 작성하기",
-            icon : (<img src="/icon/pencil_icon.png" alt="icon" className="w-[20px] h-[20px]" />),
+            icon : (<img src="http://localhost:3006/icon/pencil_icon.png" alt="icon" className="w-[20px] h-[20px]" />),
         },
         {
             title: "내용증명 인기 TOP 3",
             subtitle: "계약 해지 통지",
             action: "지금 작성하기",
-            icon : (<img src="/icon/pencil_icon.png" alt="icon" className="w-[20px] h-[20px]" />),
+            icon : (<img src="http://localhost:3006/icon/pencil_icon.png" alt="icon" className="w-[20px] h-[20px]" />),
         },
         {
             title: "로폼 TIP",
@@ -27,12 +27,12 @@ const Proof = () => {
                 <>내용증명 작성 후<br />보내는 방법</>
             ),
             action: "내용 확인하기",
-            icon : (<img src="/icon/bulb_icon.png" alt="icon" className="w-[20px] h-[20px]" />),
+            icon : (<img src="http://localhost:3006/icon/bulb_icon.png" alt="icon" className="w-[20px] h-[20px]" />),
         },
     ];
 
     return (
-        <div className="min-w-[320px]">
+        <div className="min-w-[320px] mt-20">
             <section className="font-sans mx-auto h-[310px] bg-[#0189EC] text-white text-center pt-[80px] px-[20px] box-border xd:pt-[60px] xd:px-[0px]">
                 <h1 className="text-[38px] font-[700] leading-[1.4] tracking-[-1.52px] mb-[8px] xd:px-[20px] xd:box-border">내용증명</h1>
                 <p className="H-16 text-[400]">

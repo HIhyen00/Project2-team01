@@ -8,7 +8,6 @@ export const mfConfig = {
         lawformInquiryApp: "lawformInquiryApp@http://localhost:3007/remoteEntry.js",
         lawformAboutUsApp: "lawformAboutUsApp@http://localhost:3008/remoteEntry.js",
         modalTestApp: "modalTestApp@http://localhost:3333/remoteEntry.js",
-        lawformTopic1App: "lawformTopic1App@http://localhost:3006/remoteEntry.js",
     },
     shared: {
         react: {singleton: true, requiredVersion: "^18.2.0"},
