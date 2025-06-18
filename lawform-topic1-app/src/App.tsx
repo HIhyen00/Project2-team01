@@ -16,7 +16,7 @@ import Write from "./section/Write.tsx";
 const App = () => {
 
     return (
-        // <Provider store={store}>
+        // <Provider store={store}
         <div className="min-w-[320px]">
             <Proof/>
             <Question/>

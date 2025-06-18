@@ -11,11 +11,12 @@ const cardData = {
     "임대차": [
         "내용증명(보증금 반환 청구)", "내용증명(하자보수청구-임차인용)", "내용증명(부동산 계약해지-세입자용)",
         "내용증명(부동산 계약해지-임대인용)", "내용증명(층간소음)", "내용증명(월세 청구)",
-        "내용증명(임대료 연체로 인한 계약 해지 및 명도 청구)", "내용증명(권리금 손해배상)"
+        "내용증명(임대료 연체로 인한 계약 해지 및 명도 청구)", "내용증명(권리금 손해배상)", "내용증명(임대차 계약연장 불허통지)", "내용증명(상가임대차 계약연장 불허통지)"
     ],
     "손해배상 · 계약이행": [
         "내용증명(물건,권리침해 손해배상 등)", "내용증명(신체침해 손해배상 등)", "내용증명(계약해지 통지)",
-        "내용증명(계약해지 통지 답변서)", "내용증명(계약이행 청구)"
+        "내용증명(계약해지 통지 답변서)", "내용증명(계약이행 청구)", "내용증명(권리청구)",
+        "내용증명(부당이득 반환)", "내용증명(투자금 반환)", "내용증명(파혼, 이별시 선물 반환 등 정산요청)"
     ],
     "용역 · 매매 · 임금": [
         "내용증명(용역대금 청구)", "내용증명(용역대금 반환 청구)", "내용증명(매매대금 청구용)",
@@ -65,13 +66,13 @@ const Situation = () => {
             {/* 카드 리스트 */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[1024px] mx-auto">
                 {cardData[selectedTab]?.map((title, idx) => (
-                    <div key={idx} className="bg-white rounded-lg px-6 py-4 shadow flex justify-between items-center">
+                    <a href="#" key={idx} className="bg-white rounded-lg px-6 py-4 shadow flex justify-between items-center">
                         <p className="H-16 text-[#333] font-[700]">{title}</p>
                         <div className="w-[20px] h-[20px] flex items-center justify-center">
                             <img src="https://cdn.lawform.io/web/topic/ic_20_suggested_circle.svg" className="w-[20px] h-[20px]"/>
                         </div>
 
-                    </div>
+                    </a>
                 ))}
             </div>
         </section>

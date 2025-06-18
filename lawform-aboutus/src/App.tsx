@@ -12,7 +12,9 @@ const App = () => {
 
     return (
         <div className="min-h-screen bg-white text-gray-800 mt-20">
-            <AboutUs/>
+            <main>
+                <AboutUs/>
+            </main>
         </div>
     );
 }
